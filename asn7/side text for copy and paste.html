@@ -1,0 +1,103 @@
+<div class="wrapper">
+    <div class="gallery">
+<img src="Images/books450.jpg"
+sizes="(max-width: 500px) 300px,
+(max-width: 800px) 500px,
+800px"
+srcset="images/books450.jpg 300w,
+ images/books600.jpg 500w,
+ images/books1000.jpg 800w">
+ <img src="Images/web450.jpg"
+ sizes="(max-width:500px) 300px,
+ (max-width: 800px) 500px,
+ 800px"
+ srcset="images/web450.jpg 300w,
+ images/web600.jpg 500w,
+ images/web1000.jpg 800w">
+ <img src="Images/project450.jpg"
+ sizes="(max-width:500px) 300px,
+ (max-width: 800px) 500px,
+ 800px"
+ srcset="images/project450.jpg 300w,
+ images/project600.jpg 500w,
+ images/project1000.jpg 800w">
+ <img src="Images/camera450.jpg"
+ sizes="(max-width:500px) 300px,
+ (max-width: 800px) 500px,
+ 800px"
+ srcset="images/camera450.jpg 300w,
+ images/camera600.jpg 500w,
+ images/camera1000.jpg 800w">
+
+
+}
+.wrapper {
+    display: grid;
+    grid-template-columns: 200px 50px 100px;
+    grid-template-rows: 50px 50px;
+}
+.gallery{
+    display: flex;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 5vw);
+    grid-gap: 15px;
+}
+
+<div class="sidebar">
+    <img src="Images/profile img.jpg">
+    <h3>Welcome to my starter portfolio</h3>
+    <a href="blank">About</a>
+    <a href="blank">Contact</a>
+ </div>
+ .sidebar {
+    height: 100%;
+    width: 15%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left:0;
+    background-color: black;
+    overflow-x: hidden;
+    padding-top: 20px;
+    padding-left: 20px;
+    color: white;
+    text-align: center;
+}
+.sidebar a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    text-align: center;
+    padding-left: 40px;
+}
+.sidebar img{
+    border-radius: 50%;
+    align-items: center;
+    padding-left: 40px;
+}
+
+
+
+
+
+.sidebar{
+    grid-template-columns: 3/4;
+    grid-template-rows: 1/4;
+}
+.main{
+    grid-template-rows: 2/4;
+}
+.footer{
+    grid-template-columns: 4;
+    grid-template-rows: 1;
+}
+
+
+
+        
+    
+
+
+
+  
